@@ -1,0 +1,12 @@
+int mstrlen(char *str);
+char *mstrcat(char *, char *);
+int mstrnlen(char *str, int max_len);
+char *mstrchr(char *str, int chr);
+char *mstrrchr(char *str, int chr);
+int mstrcmp(char *, char *);
+char *mstrcpy(char *str1, char *str2);
+char *mstrdup(char *);
+char *mstrncpy(char *dest,char *source, int num);
+char *mstrtok(char *str);
+char *mstrlwr(char *);
+char *mstrupr(char *);
