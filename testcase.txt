@@ -1,0 +1,100 @@
+len1 mstrlen "COEP" 4
+len2 mstrlen "Information" 11
+len3 mstrlen " " 1
+len4 mstrlen "!_1_e" 5
+len5 mstrlen "I am a coepian" 14
+dup1 mstrdup "COEP""COEP"
+dup2 mstrdup " " " "
+dup3 mstrdup "I am in Pune""I am in Pune"
+dup4 mstrdup "___+#$@""___+#$@"
+dup5 mstrdup "(Hello HII)""(Hello HII)"
+lwr1 mstrlwr "COep""coep"
+lwr2 mstrlwr "ASdfGH JKl""asdfgh jkl"
+lwr3 mstrlwr "AB@C""ab@c"
+lwr4 mstrlwr "abcd""abcd"
+lwr5 mstrlwr "Welcome To Pune""welcome to pune"
+upr1 mstrupr "coep""COEP"
+upr2 mstrupr "AbCd""ABCD"
+upr3 mstrupr "i am Indian""I AM INDIAN"
+upr4 mstrupr "a@b#""A@B#"
+upr5 mstrupr "ABC""ABC"
+rev1 mstrrev "SKY""YKS"
+rev2 mstrrev "madam""madam"
+rev3 mstrrev "ab$$cD""Dc$$ba"
+rev4 mstrrev "123""321"
+rev5 mstrrev "Hello World""dlroW olleH"
+cat1 mstrcat "Phone""123""Phone123"
+cat2 mstrcat "I am"" a student""I am a student"
+cat3 mstrcat "1 + 1 ""= 2""1 + 1 = 2"
+cat4 mstrcat " ""space"" space"
+cat5 mstrcat "Govt. Poly. P""une""Govt. Poly. Pune"
+str1 mstrstr "destination string!""on""on string!"
+str2 mstrstr "abcde!fghjkl""!""!fghjkl"
+str3 mstrstr "helo""lo""lo"
+str4 mstrstr "COEPCoEPCoEP""Co""CoEPCoEP"
+str5 mstrstr "Govt. Poly. PUNE""t.""t. Poly. PUNE"
+srr1 mstrrstr "destination string!""st""string!"
+srr2 mstrrstr "abcde!fgh!jkl""!""!jkl"
+srr3 mstrrstr "helohelo""lo""lo"
+srr4 mstrrstr "COEPCoEPCoEP""Co""CoEP"
+srr5 mstrrstr "Govt. Poly. PUNE""t""t. Poly. PUNE"
+cmp1 mstrcmp "AAA""aaa" -1
+cmp2 mstrcmp "Coep""coep" -1
+cmp3 mstrcmp "string to compare""string to compare" 0 
+cmp4 mstrcmp "!@#$%""!@#$%" 0 
+cmp5 mstrcmp "Hi""IH" 1 
+cpi1 mstrcmpi "AAA""aaa" 0
+cpi2 mstrcmpi "Coep""coep" 0
+cpi3 mstrcmpi "string to compare""compare" 1
+cpi4 mstrcmpi "!@#$%""!@#$%" 0
+cpi5 mstrcmpi "HiHello""IH" 1
+cpy1 mstrcpy "COEP!""coep!""coep!"
+cpy2 mstrcpy " ""Hello""Hello"
+cpy3 mstrcpy "123""1 + 2 = 3""1 + 2 = 3"
+cpy4 mstrcpy "Morning"" "" "
+cpy5 mstrcpy "abc""ABC""ABC"
+nle1 mstrnlen "Technology" 10 10
+nle2 mstrnlen "GPP" 10 3
+nle3 mstrnlen "ABC##" 2 2
+nle4 mstrnlen " " 12 1
+nle5 mstrnlen "123" 4 3
+chr1 mstrchr "coep" o "oep"
+chr2 mstrchr "Hello" l "llo"
+chr3 mstrchr "abc@abc" c "c@abc"
+chr4 mstrchr "12345" 1 "12345"
+chr5 mstrchr "I am an Indian" m "m an Indian"
+crr1 mstrrchr "coep" o "oep"
+crr2 mstrrchr "Hello" l "lo"
+crr3 mstrrchr "abc@abc" c "c"
+crr4 mstrrchr "12345" 3 "345"
+crr5 mstrrchr "I am an Indian" m "m an Indian"
+ctn1 mstrncat "Colloge of Engineering""Pune" 1 "Colloge of EngineeringPune"
+ctn2 mstrncat "I am an ""Indian" 1 "I am an Indian"
+ctn3 mstrncat "12345""6789" 3 "1234589"
+ctn4 mstrncat "@@ABC""ABC@@" 4 "@@ABC@@"
+ctn5 mstrncat "information""Tech!" 5 "information!"
+cpn1 mstrncpy "Colloge of Engineering""Pune" 1 "P"
+cpn2 mstrncpy "I am an ""Indian" 6 "Indian"
+cpn3 mstrncpy "12345""6789" 3 "678"
+cpn4 mstrncpy "@@ABC""ABC@@" 4 "ABC@"
+cpn5 mstrncpy "information""Tech!" 5 "Tech!"
+set1 mstrset "Hello" S "SSSSS"
+set2 mstrset "Welcome Back" ! "!!!!!!!!!!!!"
+set3 mstrset "!@#$" A "AAAA"
+set4 mstrset "GPP" . "..."
+set5 mstrset "123" 0 "000"
+mms1 mmemset "string" # 3 "st###g"
+mms2 mmemset "print mem" A 4 "prAAAAmem"
+mms3 mmemset "HiU World" i 1 "Hii World"
+mms4 mmemset "college" * 5 "co*****"
+mms5 mmemset "32123" 1 3 "32111"
+tok1 mstrtok "coep;gpp;"";""coep""gpp"
+tok2 mstrtok "coep;gpp gpp"" ""coep;gpp""gpp"
+tok3 mstrtok "coepcoep""\"""coepcoep""coepcoep"
+tok4 mstrtok "string*p*""*""string""p"
+tok5 mstrtok "tokens1 tokens2;"" ;""tokens1""tokens2"
+mmc1 mmemcpy "coep college" 4 "coolleollege"
+mmc2 mmemcpy "informatics" 1 "inaormatics"
+mmc3 mmemcpy "biologically" 5 "biicallcally"
+mmc4 mmemcpy "hello world" 0 "hello world"
+mmc5 mmemcpy "coepcoep" 1 "coepcoep"
